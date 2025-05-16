@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Luckiest+Guy&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.barralateral {
+  width: 220px;
+  background-color: #d62828;
+  color: white;
+  padding: 20px;
+  height: 100%;
+  position:fixed;
+  z-index: 1000;
+}
+
+.barralateral h2 {
+  margin-bottom: 20px;
+}
+
+.barralateral ul {
+  list-style: none;
+}
+
+.barralateral li {
+  margin: 15px 0;
+}
+
+.barralateral a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.barralateral a:hover {
+  color: #ffe066;
+}
+
+.conteudo {
+  flex: 1;
+  padding: 40px;
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+header p {
+  font-size: 18px;
+  color: #1aff00;
+  font-weight: bold;
+}
+
+.logo {
+  width: 100px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: rotate(720deg);
+}
+
+.cardapio {
+  display: flex;                  
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 20px;                      
+  padding: 50px;
+  flex-wrap: wrap;
+  margin-left: 15%;
+  margin-top: 8%;
+}
+
+.item {
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-align: center;
+  flex: 1;
+  width: 350px;
+  height: 300px;
+}  
+
+.item2 {
+  background-color: #e8debf;
+  padding: 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-align: center;
+  flex: 1;
+  width: 350px;
+  height: 300px;
+}  
+
+.item3 {
+  background-color: #e8debf;
+  padding: 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-align: center;
+  flex: 1;
+  width: 350px;
+  height: 300px;
+}  
+
+.pizza {
+  width: 310px;
+  height: 255px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  margin-right: 20px;
+}
+
+.pi-zza {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.pi-zza .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease;
+}
+
+.pi-zza .descricao {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  z-index: 2;
+  transition: opacity 0.3s ease;
+}
+
+.pi-zza:hover {
+  background-color: #f8c291;
+}
+
+.pi-zza:hover img {
+  transform: scale(1.1);
+}
+
+.pi-zza:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.656);
+}
+
+.pi-zza:hover .descricao {
+  opacity: 2;
+}
+
+.pag-cardapio {
+  background-color: #e8debf;
+}
+
+.pag-cardapio2 {
+  background-color: #000000;
+}
+
+.pag-cardapio3 {
+  background-color: #129c02;
+}  
+
+.titulo {
+  position: absolute;
+  top: 10%;
+  left: 36%;
+  transform: translate(-10%, -50%);
+  font-family: "Luckiest guy";
+  font-size: large;
+  font-size: 25px;
+  color: #d62828;
+  background-color: #1aff00;
+  border: 10px #1aff00;
+  border-radius: 10px;
+}
+
+.titulo2 {
+  position: absolute;
+  top: 10%;
+  left: 36%;
+  transform: translate(-10%, -50%);
+  font-family: "Luckiest guy";
+  font-size: large;
+  font-size: 25px;
+  color: #d62828;
+  background-color: #085300;
+  border: 10px #085300;
+  border-radius: 10px;
+}
+
+h3 {
+  font-family: "Alexandria";
+  font-size: 20px;
+}
